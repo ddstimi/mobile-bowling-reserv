@@ -6,6 +6,9 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.EditText;
 
 import androidx.activity.EdgeToEdge;
@@ -41,6 +44,9 @@ public class MainActivity extends AppCompatActivity {
 
         Log.i(LOG_TAG,"Bejelentkezett: "+email+" jelszó: "+password);
 
+        Animation fadeInAnimation = AnimationUtils.loadAnimation(this, R.anim.fade_in);
+        view.startAnimation(fadeInAnimation);
+
         Intent intent = new Intent(this, IndexActivity.class);
         intent.putExtra("SECRET_KEY",99);
         intent.setDataAndType(Uri.parse("file://" + "/path/to/your/activity_index.xml"), "text/xml");
@@ -49,6 +55,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void registerPage(View view) {
+        Animation fadeInAnimation = AnimationUtils.loadAnimation(this, R.anim.fade_in);
+        view.startAnimation(fadeInAnimation);
+
         Intent intent = new Intent(this, RegisterActivity.class);
         intent.putExtra("SECRET_KEY",99);
         intent.setDataAndType(Uri.parse("file://" + "/path/to/your/activity_register.xml"), "text/xml");

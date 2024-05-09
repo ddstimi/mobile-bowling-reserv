@@ -1,6 +1,9 @@
 package com.example.bowling;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
@@ -92,5 +95,12 @@ public class ReservActivity extends AppCompatActivity {
     private boolean isFridayOrSaturday(Calendar calendar) {
         int dayOfWeek = calendar.get(Calendar.DAY_OF_WEEK);
         return dayOfWeek == Calendar.FRIDAY || dayOfWeek == Calendar.SATURDAY;
+    }
+
+    public void profile(View view) {
+        Intent intent = new Intent(this, ProfileActivity.class);
+        intent.putExtra("SECRET_KEY",99);
+        intent.setDataAndType(Uri.parse("file://" + "/path/to/your/activity_profile.xml"), "text/xml");
+        startActivity(intent);
     }
 }
