@@ -16,9 +16,6 @@
             android:name=".ReservActivity"
             android:exported="false" />
         <activity
-            android:name=".InfoActivity"
-            android:exported="false" />
-        <activity
             android:name=".IndexActivity"
             android:exported="false" />
         <activity

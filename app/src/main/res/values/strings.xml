@@ -1,3 +1,34 @@
 <resources>
     <string name="app_name">Bowling</string>
+    <string name="reservation_policy">
+<![CDATA[
+Bowling Pálya Foglalási Szabályzat
+
+Kedves Ügyfeleink!
+
+Üdvözöljük a Bowling Pálya Foglalási Szabályzatban!\n Az alábbiakban szeretnénk részletesen ismertetni a foglalás folyamatát és az ehhez kapcsolódó fontos információkat.
+
+1. Foglalási Feltételek:
+   - A foglalás érvényesítéséhez minden résztvevő számára kötelező megadni a pontos nevet és elérhetőséget.
+   - Egy óra bowlingozás díja 1000 forint/fő. Kérjük, vegye figyelembe, hogy ez az ár nem tartalmazza a bowling cipő bérlését.
+   - A foglalás véglegesítéséhez minimum egy órával a kezdés előtt szükséges megérkezni, vagy előzetesen értesíteni a késésről.
+
+2. Bowling Cipő:
+   - A bowling cipők kölcsönzése nem kötelező, azonban javasoljuk, hogy vegyenek igénybe egy párat a biztonságos játék érdekében. A cipők kényelmi és higiéniai okokból javasoltak.
+
+3. Lemondási Feltételek:
+   - A foglalás lemondása esetén kérjük, jelezzék azt minél előbb telefonon vagy személyesen.
+   - Késői lemondás vagy meg nem érkezés esetén a foglalás díját felszámíthatjuk.
+
+4. Egyéb Fontos Információk:
+   - Kérjük, tartsák tiszteletben a többi vendéget és a bowling pálya szabályait.
+   - Az alkoholos italok fogyasztása csak az erre kijelölt területeken engedélyezett.
+
+Reméljük, hogy a fenti információk segítenek Önöknek a foglalási folyamat során, és kellemes időtöltést biztosítanak az Önök számára a bowling pályánkon.
+
+Köszönjük, hogy minket választottak!
+
+]]>
+</string>
+
 </resources>
