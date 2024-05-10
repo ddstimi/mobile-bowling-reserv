@@ -73,4 +73,7 @@ public class MainActivity extends AppCompatActivity {
         editor.putString("password",passwordET.getText().toString());
         editor.apply();
     }
+
+    public void loginGoogle(View view) {
+    }
 }

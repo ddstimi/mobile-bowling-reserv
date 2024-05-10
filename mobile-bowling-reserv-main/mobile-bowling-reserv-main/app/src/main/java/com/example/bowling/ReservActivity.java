@@ -97,10 +97,30 @@ public class ReservActivity extends AppCompatActivity {
         return dayOfWeek == Calendar.FRIDAY || dayOfWeek == Calendar.SATURDAY;
     }
 
+    public void indexPage(View view) {
+        Intent intent = new Intent(this, IndexActivity.class);
+        intent.putExtra("SECRET_KEY",99);
+        intent.setDataAndType(Uri.parse("file://" + "/path/to/your/activity_index.xml"), "text/xml");
+        startActivity(intent);
+    }
+
+    public void reservPage(View view) {
+        Intent intent = new Intent(this, ReservActivity.class);
+        intent.putExtra("SECRET_KEY",99);
+        intent.setDataAndType(Uri.parse("file://" + "/path/to/your/activity_reserv.xml"), "text/xml");
+        startActivity(intent);
+    }
+
     public void profile(View view) {
         Intent intent = new Intent(this, ProfileActivity.class);
         intent.putExtra("SECRET_KEY",99);
         intent.setDataAndType(Uri.parse("file://" + "/path/to/your/activity_profile.xml"), "text/xml");
+        startActivity(intent);
+    }
+    public void logout(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
+        intent.putExtra("SECRET_KEY",99);
+        intent.setDataAndType(Uri.parse("file://" + "/path/to/your/activity_main.xml"), "text/xml");
         startActivity(intent);
     }
 }
